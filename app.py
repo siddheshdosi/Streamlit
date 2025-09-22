@@ -1,6 +1,16 @@
 import streamlit as st
 import requests
 
+# Hide default Streamlit elements
+hide_st_style = """
+    <style>
+    #MainMenu {visibility: hidden;} /* Hamburger menu */
+    footer {visibility: hidden;}    /* Footer */
+    header {visibility: hidden;}    /* Header */
+    </style>
+"""
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 st.set_page_config(page_title="AI Agent Demo", layout="centered")
 
 st.title("🤖 AI Agent Chat Demo")
