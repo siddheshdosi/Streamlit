@@ -2,11 +2,20 @@ import streamlit as st
 import requests
 
 # Hide default Streamlit elements
+# hide_st_style = """
+#     <style>
+#     #MainMenu {visibility: hidden;} /* Hamburger menu */
+#     footer {visibility: hidden;}    /* Footer */
+#     header {visibility: hidden;}    /* Header */
+#     </style>
+# """
 hide_st_style = """
     <style>
-    #MainMenu {visibility: hidden;} /* Hamburger menu */
-    footer {visibility: hidden;}    /* Footer */
-    header {visibility: hidden;}    /* Header */
+    #MainMenu {visibility: hidden;}  /* hamburger menu */
+    footer {visibility: hidden;}     /* footer */
+    header {visibility: hidden;}     /* top header */
+    .stAppDeployButton {display:none;}  /* deploy/share button */
+    .viewerBadge_container__1QSob {display: none !important;} /* hosted with Streamlit badge */
     </style>
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
