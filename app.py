@@ -28,13 +28,13 @@ st.title("🤖 AI Agent Chat Demo")
 def ask_agent(query):
     return f"Agent response for: {query}"
 
-# user_input = st.text_input("Ask something:")
-# if st.button("Send") and user_input:
-#     response = ask_agent(user_input)
-#     st.write("### Response:")
-#     st.success(response)
+user_input = st.text_input("Ask something:")
+if st.button("Send") and user_input:
+    response = ask_agent(user_input)
+    st.write("### Response:")
+    st.success(response)
 # This is the "API endpoint" replacement
-question = st.text_input("Enter your query (for testing here):")
-if question:
-    response = ask_agent(question)
-    st.json({"answer": response})
+# question = st.text_input("Enter your query (for testing here):")
+# if question:
+#     response = ask_agent(question)
+#     st.json({"answer": response})
